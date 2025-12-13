@@ -13,5 +13,5 @@ print("Men's Swimming DataFrame:")
 print(df_mens_swim)
 
 # Save dataframe to CSV
-df_mens_swim.to_csv("../data/mens_swim_sample.csv", index=False)
+df_mens_swim.to_csv("data/mens_swim_sample.csv", index=False)
 print("Saved CSV to data/mens_swim_sample.csv")
