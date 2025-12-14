@@ -3,22 +3,17 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import re
 
-# ----------------------------
-# Height conversion functions
-# ----------------------------
 def parse_height_to_inches(height_text):
     if pd.isna(height_text):
         return None
 
     s = str(height_text).strip()
 
-    # matches 6-2 or 6'2 or 6`2
     match = re.search(r"(\d+)\s*[-'`]\s*(\d{1,2})", s)
     if match:
         feet = int(match.group(1))
         inches = int(match.group(2))
     else:
-        # fallback: just a feet number
         match = re.search(r"(\d+)", s)
         if not match:
             return None
@@ -35,9 +30,7 @@ def parse_height_to_cm(height_text):
     return inches * 2.54
 
 
-# ---------------------------------------
-# MEN'S SWIMMING roster URLs (your list)
-# ---------------------------------------
+
 mens_swim_urls = [
     ("College of Staten Island", "https://csidolphins.com/sports/mens-swimming-and-diving/roster"),
     ("York College", "https://yorkathletics.com/sports/mens-swimming-and-diving/roster"),
@@ -59,7 +52,6 @@ def scrape_one_mens_swim_roster(school_name, url):
     response.raise_for_status()
     html = response.text
 
-    # try to read tables from the page
     try:
         tables = pd.read_html(html)
     except ValueError:
@@ -68,7 +60,6 @@ def scrape_one_mens_swim_roster(school_name, url):
 
     roster_table = None
 
-    # pick the first table that contains a height column
     for t in tables:
         cols_lower = [str(c).lower() for c in t.columns]
         if any(("ht" in c) or ("height" in c) or ("hgt" in c) for c in cols_lower):
@@ -79,7 +70,6 @@ def scrape_one_mens_swim_roster(school_name, url):
         print(f"  -> No table with height column found for {school_name}. Skipping.")
         return pd.DataFrame(columns=["name", "height_raw", "school", "height_in"])
 
-    # find name + height columns
     name_col = None
     height_col = None
 
@@ -90,7 +80,6 @@ def scrape_one_mens_swim_roster(school_name, url):
         if height_col is None and ("ht" in col_lower or "height" in col_lower or "hgt" in col_lower):
             height_col = col
 
-    # fallback: if it didn’t detect name col, use first col
     if name_col is None:
         name_col = roster_table.columns[0]
 
@@ -102,16 +91,12 @@ def scrape_one_mens_swim_roster(school_name, url):
     temp.columns = ["name", "height_raw"]
     temp["school"] = school_name
 
-    # convert + keep valid heights only
     temp["height_in"] = temp["height_raw"].apply(parse_height_to_inches)
     temp = temp[temp["height_in"].notna()].copy()
 
     return temp[["name", "height_raw", "school", "height_in"]]
 
 
-# ----------------------------
-# Run scrape for all schools
-# ----------------------------
 all_rosters = []
 
 for school, url in mens_swim_urls:
@@ -139,8 +124,8 @@ else:
     print("\nAverage men's swimming height:")
     print(f"{avg_height_in:.2f} inches  (~ {avg_height_cm:.2f} cm)")
 
-    # save to your project data folder
-    mens_swim_df = mens_swim_df[
+
+        mens_swim_df = mens_swim_df[
         ["name", "height_raw", "school", "sport", "gender", "team", "height_in", "height_cm"]
     ]
     mens_swim_df.to_csv("data/mens_swim.csv", index=False)
