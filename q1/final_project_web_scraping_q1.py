@@ -11,8 +11,6 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 
-pd.set_option('display.max_columns',None)
-
 url="https://en.wikipedia.org/wiki/List_of_highest-grossing_films"
 
 headers = {
@@ -22,7 +20,25 @@ headers = {
     'Connection': 'keep-alive'
 }
 page = requests.get(url, headers=headers)
+
 soup= BeautifulSoup(page.content, 'html.parser')
+
 tables=pd.read_html(page.text)
+
 df = tables[0]
-print(df.head())
+
+rank = df['Rank'].tolist()
+
+titles =df['Title'].tolist()
+
+years = df["Year"].tolist()
+
+MovieData = {
+    'MovieRank':rank,
+    'MovieTitle':titles,
+    'MovieYear':years
+}
+
+MovieData_df= pd.DataFrame(MovieData)
+MovieData_df.to_csv('MovieList.csv')
+MovieData_df
