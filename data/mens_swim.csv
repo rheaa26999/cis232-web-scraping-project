@@ -1,40 +1,167 @@
-school,name,height
-York College,Darien Davis,Fr.
-York College,Kevin Flowers,Fr.
-York College,Munab Hasnain,Fr.
-York College,George Molina,So.
-York College,Tyrone Morris,Fr.
-York College,Wood-by Paulemont,So.
-York College,Lukas Rivera,Fr.
-York College,Brandon Smith,Fr.
-Baruch College,*,Gregory Terentyev
-Baruch College,*,Leonardo Valdivia
-Baruch College,*,Daniel Vasilkoff
-Ramapo College,AJ Guevara,*
-Ramapo College,Joe Swede,*
-SUNY Binghamton,Benjamin Beldner,Sr.
-SUNY Binghamton,Brandon Berger,Jr.
-SUNY Binghamton,Ryan Board,Sr.
-SUNY Binghamton,Keegan Chatham,Fr.
-SUNY Binghamton,Zachary Ciriaco,Jr.
-SUNY Binghamton,Ryan Cohn,Jr.
-SUNY Binghamton,Nathan DeGuzman,Sr.
-SUNY Binghamton,Christopher Egan,Sr.
-SUNY Binghamton,Christopher Ghim,So.
-SUNY Binghamton,Brian Harding,Sr.
-SUNY Binghamton,Jackson Homan,Jr.
-SUNY Binghamton,Sandon Karinsky,So.
-SUNY Binghamton,George Kipshidze,So.
-SUNY Binghamton,Eric Kroon,So.
-SUNY Binghamton,Elijah Lanfear,Fr.
-SUNY Binghamton,Xiaoyu Lin,So.
-SUNY Binghamton,Ryan Maierle,Jr.
-SUNY Binghamton,William Maurer,So.
-SUNY Binghamton,Justin Meyn,Jr.
-SUNY Binghamton,Liam Murphy,So.
-SUNY Binghamton,Oisin O'Sullivan,So.
-SUNY Binghamton,Matthew Palguta,Jr.
-SUNY Binghamton,Travis Phillips,So.
-SUNY Binghamton,Robert Reining,So.
-SUNY Binghamton,Henry Shemet,So.
-SUNY Binghamton,Jake  Vecchio,So.
+name,height_raw,school,sport,gender,team,height_in,height_cm
+Darien Davis,5-5,York College,swimming,M,Men's Swimming,65.0,165.1
+Kevin Flowers,5-9,York College,swimming,M,Men's Swimming,69.0,175.26
+Munab Hasnain,5-10,York College,swimming,M,Men's Swimming,70.0,177.8
+George Molina,6-0,York College,swimming,M,Men's Swimming,72.0,182.88
+Tyrone Morris,6-2,York College,swimming,M,Men's Swimming,74.0,187.96
+Wood-by Paulemont,5-9,York College,swimming,M,Men's Swimming,69.0,175.26
+Lukas Rivera,5-7,York College,swimming,M,Men's Swimming,67.0,170.18
+Brandon Smith,6-2,York College,swimming,M,Men's Swimming,74.0,187.96
+Ethan Abramov,6-2,Baruch College,swimming,M,Men's Swimming,74.0,187.96
+Alexander Boyarsky,6-1,Baruch College,swimming,M,Men's Swimming,73.0,185.42000000000002
+Joshua Chariah,6-2,Baruch College,swimming,M,Men's Swimming,74.0,187.96
+Luis Coronel,6-0,Baruch College,swimming,M,Men's Swimming,72.0,182.88
+Vicent Dominguez Romero,5-10,Baruch College,swimming,M,Men's Swimming,70.0,177.8
+Ramiel Fayngersh,6-0,Baruch College,swimming,M,Men's Swimming,72.0,182.88
+Eric Goldshteyn,5-8,Baruch College,swimming,M,Men's Swimming,68.0,172.72
+Tenzin Gurung,5-7,Baruch College,swimming,M,Men's Swimming,67.0,170.18
+Michael Guzman,5-10,Baruch College,swimming,M,Men's Swimming,70.0,177.8
+Christos Hamakiotes,5-10,Baruch College,swimming,M,Men's Swimming,70.0,177.8
+Riming Jiang,5-8,Baruch College,swimming,M,Men's Swimming,68.0,172.72
+Eric Kim,5-11,Baruch College,swimming,M,Men's Swimming,71.0,180.34
+Nead Kojic,6-3,Baruch College,swimming,M,Men's Swimming,75.0,190.5
+Maksym Korova,6-0,Baruch College,swimming,M,Men's Swimming,72.0,182.88
+Adrian Lengyel,5-8,Baruch College,swimming,M,Men's Swimming,68.0,172.72
+Samuel Liao,5-5,Baruch College,swimming,M,Men's Swimming,65.0,165.1
+Jordan Lin,5-9,Baruch College,swimming,M,Men's Swimming,69.0,175.26
+Maxim Reznik,5-11,Baruch College,swimming,M,Men's Swimming,71.0,180.34
+Antonio Ruiz,6-2,Baruch College,swimming,M,Men's Swimming,74.0,187.96
+Gregory Terentyev,5-7,Baruch College,swimming,M,Men's Swimming,67.0,170.18
+Donald Truong,5-9,Baruch College,swimming,M,Men's Swimming,69.0,175.26
+Leonardo Valdivia,5-8,Baruch College,swimming,M,Men's Swimming,68.0,172.72
+Daniel Vasilkoff,5-11,Baruch College,swimming,M,Men's Swimming,71.0,180.34
+Lucas Vasquez,6-0,Baruch College,swimming,M,Men's Swimming,72.0,182.88
+Yousif Alsadi,6-0,Brooklyn College,swimming,M,Men's Swimming,72.0,182.88
+Zurab Chkhartishvili,6-1,Brooklyn College,swimming,M,Men's Swimming,73.0,185.42000000000002
+Christian Diaz,5-6,Brooklyn College,swimming,M,Men's Swimming,66.0,167.64000000000001
+Samuel Gorodetsky,5-7,Brooklyn College,swimming,M,Men's Swimming,67.0,170.18
+Matthew Kadatskiy,5-11,Brooklyn College,swimming,M,Men's Swimming,71.0,180.34
+Anthony King,5-5,Brooklyn College,swimming,M,Men's Swimming,65.0,165.1
+James Lee,5-8,Brooklyn College,swimming,M,Men's Swimming,68.0,172.72
+Mykyta Movchan,6-1,Brooklyn College,swimming,M,Men's Swimming,73.0,185.42000000000002
+Samuel Ochoa,6-0,Brooklyn College,swimming,M,Men's Swimming,72.0,182.88
+Simeon Shkoruta,5-7,Brooklyn College,swimming,M,Men's Swimming,67.0,170.18
+Angel Silva,6-0,Brooklyn College,swimming,M,Men's Swimming,72.0,182.88
+Max Soltsman,5-8,Brooklyn College,swimming,M,Men's Swimming,68.0,172.72
+Erik Umkeev,6-0,Brooklyn College,swimming,M,Men's Swimming,72.0,182.88
+Or Volpert,6-0,Brooklyn College,swimming,M,Men's Swimming,72.0,182.88
+Andrew Woo,5-10,Brooklyn College,swimming,M,Men's Swimming,70.0,177.8
+Ryan Boeding,6-2,Lindenwood University,swimming,M,Men's Swimming,74.0,187.96
+Noah Boyd,5-8,Lindenwood University,swimming,M,Men's Swimming,68.0,172.72
+Johan Cue Carrillo,6-1,Lindenwood University,swimming,M,Men's Swimming,73.0,185.42000000000002
+Trevor Danner,6-1,Lindenwood University,swimming,M,Men's Swimming,73.0,185.42000000000002
+Mattia Giurgevich,6-4,Lindenwood University,swimming,M,Men's Swimming,76.0,193.04
+Eric Hansson,6-0,Lindenwood University,swimming,M,Men's Swimming,72.0,182.88
+Tait Harvey,6-1,Lindenwood University,swimming,M,Men's Swimming,73.0,185.42000000000002
+Nicholas Heye,5-11,Lindenwood University,swimming,M,Men's Swimming,71.0,180.34
+Elliott Irwin,6-2,Lindenwood University,swimming,M,Men's Swimming,74.0,187.96
+Matheo Mateos-Mongelos,6-1,Lindenwood University,swimming,M,Men's Swimming,73.0,185.42000000000002
+David Molina-Fregenal,5-10,Lindenwood University,swimming,M,Men's Swimming,70.0,177.8
+Jake Noble,5-10,Lindenwood University,swimming,M,Men's Swimming,70.0,177.8
+Jose Ochoa,5-9,Lindenwood University,swimming,M,Men's Swimming,69.0,175.26
+Gavin Schulte,6-1,Lindenwood University,swimming,M,Men's Swimming,73.0,185.42000000000002
+Adam Szczerba,6-4,Lindenwood University,swimming,M,Men's Swimming,76.0,193.04
+Patryk Winiatowski,6-0,Lindenwood University,swimming,M,Men's Swimming,72.0,182.88
+Luke Asbury,6-0,McKendree University,swimming,M,Men's Swimming,72.0,182.88
+Nojus Bertulis,6-0,McKendree University,swimming,M,Men's Swimming,72.0,182.88
+Noah Brereton,6-0,McKendree University,swimming,M,Men's Swimming,72.0,182.88
+Caden Brooks,6-1,McKendree University,swimming,M,Men's Swimming,73.0,185.42000000000002
+Patrick Cramer,6-3,McKendree University,swimming,M,Men's Swimming,75.0,190.5
+Samuel Davey,5-11,McKendree University,swimming,M,Men's Swimming,71.0,180.34
+Daniel De Oliveira,5-10,McKendree University,swimming,M,Men's Swimming,70.0,177.8
+Mason Enthoven,5-7,McKendree University,swimming,M,Men's Swimming,67.0,170.18
+Louis Fasani,6-2,McKendree University,swimming,M,Men's Swimming,74.0,187.96
+Miles Fleischer,5-3,McKendree University,swimming,M,Men's Swimming,63.0,160.02
+Vova Gavrysh,6-2,McKendree University,swimming,M,Men's Swimming,74.0,187.96
+Kadence Griffin,5-10,McKendree University,swimming,M,Men's Swimming,70.0,177.8
+David Hammond,5-10,McKendree University,swimming,M,Men's Swimming,70.0,177.8
+Finn Moseley,6-1,McKendree University,swimming,M,Men's Swimming,73.0,185.42000000000002
+Brady Murdick,6-6,McKendree University,swimming,M,Men's Swimming,78.0,198.12
+Carson Olson,6-0,McKendree University,swimming,M,Men's Swimming,72.0,182.88
+Joey Ovanic,6-0,McKendree University,swimming,M,Men's Swimming,72.0,182.88
+Adin Peper,6-1,McKendree University,swimming,M,Men's Swimming,73.0,185.42000000000002
+Nathan Pollard,6-2,McKendree University,swimming,M,Men's Swimming,74.0,187.96
+Sam Russell,5-11,McKendree University,swimming,M,Men's Swimming,71.0,180.34
+Jakub Rynkiewicz,6-1,McKendree University,swimming,M,Men's Swimming,73.0,185.42000000000002
+Calum Shank,6-0,McKendree University,swimming,M,Men's Swimming,72.0,182.88
+Atticus Sternke,6-3,McKendree University,swimming,M,Men's Swimming,75.0,190.5
+Michael Stooke,6-1,McKendree University,swimming,M,Men's Swimming,73.0,185.42000000000002
+Domantas Tarnauskas,6-5,McKendree University,swimming,M,Men's Swimming,77.0,195.58
+Phineas Theall,5-11,McKendree University,swimming,M,Men's Swimming,71.0,180.34
+Keaton Tottle,6-0,McKendree University,swimming,M,Men's Swimming,72.0,182.88
+Tyson Upton,6-7,McKendree University,swimming,M,Men's Swimming,79.0,200.66
+Luis Villalobos Matson,5-11,McKendree University,swimming,M,Men's Swimming,71.0,180.34
+Joe Britto,5-8,Ramapo College,swimming,M,Men's Swimming,68.0,172.72
+Rodrigo Burgo,5-6,Ramapo College,swimming,M,Men's Swimming,66.0,167.64000000000001
+Tyler Canteen,5-7,Ramapo College,swimming,M,Men's Swimming,67.0,170.18
+Anthony Chiu,5-11,Ramapo College,swimming,M,Men's Swimming,71.0,180.34
+Doruk Evcimen,5-8,Ramapo College,swimming,M,Men's Swimming,68.0,172.72
+Tyler Finkle,6-4,Ramapo College,swimming,M,Men's Swimming,76.0,193.04
+AJ Guevara,5-6,Ramapo College,swimming,M,Men's Swimming,66.0,167.64000000000001
+Jeffrey Hanlon,5-6,Ramapo College,swimming,M,Men's Swimming,66.0,167.64000000000001
+Tomas Jimenez,5-7,Ramapo College,swimming,M,Men's Swimming,67.0,170.18
+Devin Korsak,5-10,Ramapo College,swimming,M,Men's Swimming,70.0,177.8
+Oskar Mejia,5-6,Ramapo College,swimming,M,Men's Swimming,66.0,167.64000000000001
+Matthew O'Brien,5-11,Ramapo College,swimming,M,Men's Swimming,71.0,180.34
+Jacob Peraza,6-1,Ramapo College,swimming,M,Men's Swimming,73.0,185.42000000000002
+Iker Pereira Hortal,5-11,Ramapo College,swimming,M,Men's Swimming,71.0,180.34
+Andy Shkolnik,5-11,Ramapo College,swimming,M,Men's Swimming,71.0,180.34
+Joe Swede,6-4,Ramapo College,swimming,M,Men's Swimming,76.0,193.04
+Andrew Van Beveren,5-10,Ramapo College,swimming,M,Men's Swimming,70.0,177.8
+Adam Wright,5-9,Ramapo College,swimming,M,Men's Swimming,69.0,175.26
+Ian Ziomek,5-9,Ramapo College,swimming,M,Men's Swimming,69.0,175.26
+Maddox Aramini,5-7,SUNY Oneonta,swimming,M,Men's Swimming,67.0,170.18
+Andrew Capella,5-9,SUNY Oneonta,swimming,M,Men's Swimming,69.0,175.26
+Russell Cheng,5-7,SUNY Oneonta,swimming,M,Men's Swimming,67.0,170.18
+Matt Cleveland,5-8,SUNY Oneonta,swimming,M,Men's Swimming,68.0,172.72
+Caleb Doney,5-2,SUNY Oneonta,swimming,M,Men's Swimming,62.0,157.48
+Bastian Dudley,5-10,SUNY Oneonta,swimming,M,Men's Swimming,70.0,177.8
+Luke Goodspeed,5-8,SUNY Oneonta,swimming,M,Men's Swimming,68.0,172.72
+Dylan Harrison,5-9,SUNY Oneonta,swimming,M,Men's Swimming,69.0,175.26
+Brendan Heaney,6-0,SUNY Oneonta,swimming,M,Men's Swimming,72.0,182.88
+Ben Heyman,5-8,SUNY Oneonta,swimming,M,Men's Swimming,68.0,172.72
+Calvin Hitzschke,6-0,SUNY Oneonta,swimming,M,Men's Swimming,72.0,182.88
+Will Humphrey,5-11,SUNY Oneonta,swimming,M,Men's Swimming,71.0,180.34
+Brendan Kliment,5-6,SUNY Oneonta,swimming,M,Men's Swimming,66.0,167.64000000000001
+Cosmo Martinelli,6-2,SUNY Oneonta,swimming,M,Men's Swimming,74.0,187.96
+Michael Palazzolo,6-1,SUNY Oneonta,swimming,M,Men's Swimming,73.0,185.42000000000002
+Colin Ringwood,5-9,SUNY Oneonta,swimming,M,Men's Swimming,69.0,175.26
+David Scott,5-10,SUNY Oneonta,swimming,M,Men's Swimming,70.0,177.8
+Delroy Tyrrell,6-0,SUNY Oneonta,swimming,M,Men's Swimming,72.0,182.88
+Gavin Weseman,6-4,SUNY Oneonta,swimming,M,Men's Swimming,76.0,193.04
+Benjamin Beldner,6-1,SUNY Binghamton,swimming,M,Men's Swimming,73.0,185.42000000000002
+Brandon Berger,6-1,SUNY Binghamton,swimming,M,Men's Swimming,73.0,185.42000000000002
+Ryan Board,5-11,SUNY Binghamton,swimming,M,Men's Swimming,71.0,180.34
+Keegan Chatham,5-10,SUNY Binghamton,swimming,M,Men's Swimming,70.0,177.8
+Zachary Ciriaco,5-6,SUNY Binghamton,swimming,M,Men's Swimming,66.0,167.64000000000001
+Ryan Cohn,5-10,SUNY Binghamton,swimming,M,Men's Swimming,70.0,177.8
+Nathan DeGuzman,5-9,SUNY Binghamton,swimming,M,Men's Swimming,69.0,175.26
+Christopher Egan,5-6,SUNY Binghamton,swimming,M,Men's Swimming,66.0,167.64000000000001
+Christopher Ghim,6-0,SUNY Binghamton,swimming,M,Men's Swimming,72.0,182.88
+Brian Harding,6-4,SUNY Binghamton,swimming,M,Men's Swimming,76.0,193.04
+Jackson Homan,6-0,SUNY Binghamton,swimming,M,Men's Swimming,72.0,182.88
+Sandon Karinsky,5-10,SUNY Binghamton,swimming,M,Men's Swimming,70.0,177.8
+George Kipshidze,6-1,SUNY Binghamton,swimming,M,Men's Swimming,73.0,185.42000000000002
+Eric Kroon,6-5,SUNY Binghamton,swimming,M,Men's Swimming,77.0,195.58
+Elijah Lanfear,6-2,SUNY Binghamton,swimming,M,Men's Swimming,74.0,187.96
+Xiaoyu Lin,6-1,SUNY Binghamton,swimming,M,Men's Swimming,73.0,185.42000000000002
+Ryan Maierle,6-3,SUNY Binghamton,swimming,M,Men's Swimming,75.0,190.5
+William Maurer,5-10,SUNY Binghamton,swimming,M,Men's Swimming,70.0,177.8
+Justin Meyn,6-2,SUNY Binghamton,swimming,M,Men's Swimming,74.0,187.96
+Liam Murphy,6-1,SUNY Binghamton,swimming,M,Men's Swimming,73.0,185.42000000000002
+Oisin O'Sullivan,5-11,SUNY Binghamton,swimming,M,Men's Swimming,71.0,180.34
+Matthew Palguta,6-2,SUNY Binghamton,swimming,M,Men's Swimming,74.0,187.96
+Travis Phillips,6-1,SUNY Binghamton,swimming,M,Men's Swimming,73.0,185.42000000000002
+Robert Reining,6-2,SUNY Binghamton,swimming,M,Men's Swimming,74.0,187.96
+Henry Shemet,6-3,SUNY Binghamton,swimming,M,Men's Swimming,75.0,190.5
+Jake Vecchio,5-8,SUNY Binghamton,swimming,M,Men's Swimming,68.0,172.72
+Matthew Czubachowski,6-0,Albright College,swimming,M,Men's Swimming,72.0,182.88
+Nicholas Dolan,6-1,Albright College,swimming,M,Men's Swimming,73.0,185.42000000000002
+Caleb Ferns,6-0,Albright College,swimming,M,Men's Swimming,72.0,182.88
+Nicholas Griffith,6-4,Albright College,swimming,M,Men's Swimming,76.0,193.04
+Joseph Guiliano,6-0,Albright College,swimming,M,Men's Swimming,72.0,182.88
+Kieran Hassard,6-0,Albright College,swimming,M,Men's Swimming,72.0,182.88
+Anthony Laite,5-9,Albright College,swimming,M,Men's Swimming,69.0,175.26
+Drew MacDonald,6-0,Albright College,swimming,M,Men's Swimming,72.0,182.88
+Kyle Morken,6-1,Albright College,swimming,M,Men's Swimming,73.0,185.42000000000002
+Peter Vanderwerf,6-3,Albright College,swimming,M,Men's Swimming,75.0,190.5
