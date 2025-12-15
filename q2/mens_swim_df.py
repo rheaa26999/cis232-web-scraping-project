@@ -125,8 +125,8 @@ else:
     print(f"{avg_height_in:.2f} inches  (~ {avg_height_cm:.2f} cm)")
 
 
-        mens_swim_df = mens_swim_df[
-        ["name", "height_raw", "school", "sport", "gender", "team", "height_in", "height_cm"]
+    mens_swim_df = mens_swim_df[
+    ["name", "height_raw", "school", "sport", "gender", "team", "height_in", "height_cm"]
     ]
     mens_swim_df.to_csv("data/mens_swim.csv", index=False)
 print("\nSaved file: data/mens_swim.csv")
