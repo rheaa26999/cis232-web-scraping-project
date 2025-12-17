@@ -11,7 +11,14 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 
+# apikey = api keys are free from https://www.omdbapi.com/
+
+apiurl= "http://www.omdbapi.com/"
+
+
 url="https://en.wikipedia.org/wiki/List_of_highest-grossing_films"
+
+api_movie_data = []
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36',
@@ -39,6 +46,31 @@ MovieData = {
     'MovieYear':years
 }
 
+for title in titles: 
+  params = {
+      "t": title, 
+      "apikey": apikey
+  }
+
+  response= requests.get(apiurl, params=params)
+  data = response.json()
+
+  if data["Response"] == "True":
+    api_movie_data.append({
+        "Title": data["Title"],
+        "Genre": data["Genre"],
+        "Director": data["Director"],
+        "IMDB_Rating": data["imdbRating"],
+        "Runtime": data["Runtime"],
+        "Awards": data["Awards"],
+    })
+  else:
+    print(f"Movie not found: {title}") 
+
 MovieData_df= pd.DataFrame(MovieData)
+
 MovieData_df.to_csv('MovieList.csv')
-MovieData_df
+
+api_data = pd.DataFrame(api_movie_data)
+
+api_data.to_csv("MovieDetails.csv")
